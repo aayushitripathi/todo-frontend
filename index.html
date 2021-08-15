@@ -4,44 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./dist/css/style.css">
-    <title>To Do</title>
+    <title>Todo List ❤️</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
-    <script src="./src/app.js" defer></script>
+    <script src="./src/app.js" defer type="module"></script>
 </head>
 <body>
-    <div class="header">
-    <h1>To Do List</h1>
-    <input type="text" name="myInput" id="myInput" placeholder="Things to be done...." />
-    <span class="addBtn" id="add_button">Add</span>
-</div>
-    <ul id="myUL"></ul>
+    <h1>TODO LIST</h1>
+    <form action="#" name="todo" id="taskinput">
+        <label for="task">Add Task</label>
+        <input type="text" name="task" id="taskField" placeholder="✍️ Add task...">
+        <button type="submit" id= "submit"><i class="fas fa-plus fa-2x"></i></button>
+    </form>
+    <div id="root"></div>
+   
 </body>
 </html>
-
-
-
-
-
-<!-- 
-    input field with add task button
-    div
-        all uncompleted tasks with edit and delete button
-        also checkbox to tick completed tasks.
-    div
-        all completed tasks
- -->
-<!-- ----------------------------------------------------------------------------------------- -->
- <!-- 
- data 
-    input div with add button
-    
-    div to display all task
-    disabled input with edit and delete button and checkbox
-
-    div to display all completed tasks
-    disabled input with disabled edit button and delete button and checked checkbox
-  -->
