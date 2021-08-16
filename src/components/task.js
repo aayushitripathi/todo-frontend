@@ -18,7 +18,6 @@ listElement.style.listStyle = "none";
 listElement.setAttribute("id", item.taskId);
 
 listfield.value = item.content;
-console.log(item.content);
 listfield.disabled = true;
 listfield.addEventListener("change", () =>{ 
 listElement.isEdited = true;
@@ -34,9 +33,9 @@ if(item.iscompleted)
     // console.log("listfield.isComplete");
     listElement.style.backgroundColor ="#ae5f75";
     delBtn.style.color="white";
-    editBtn.style.color="white";
-    doneEdit.style.color="white";
     completeBtn.style.color="white";
+    editBtn.style.display="none";
+    doneEdit.style.display="none";
     listfield.style = "text-decoration: line-through";
     }
 
